@@ -1,0 +1,10 @@
+body{
+    direction: rtl;
+    background: #eee;
+    font-family: IRANSans;
+}
+header .main-header{
+    width: 100%;
+    height: 200px;
+    background: #fff;
+}
