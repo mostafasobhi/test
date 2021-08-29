@@ -20,7 +20,7 @@ $(document).ready(function(){
     function start(){
         $('.slider-progress').css({
             width:'100%',
-            transition:'all 10s'
+            transition:'all 6s'
         })
     }
     function reset(){
@@ -34,7 +34,7 @@ $(document).ready(function(){
         rtl:true,
         nav:true,
         dots:false,
-        navText:['<span class="iconify" data-icon="bi:chevron-right" data-inline="false"></span>','<span class="iconify" data-icon="bi:chevron-left" data-inline="false"></span>'],
+        navText:['<span class="iconify" data-icon="akar-icons:chevron-right"></span>','<span class="iconify" data-icon="akar-icons:chevron-left"></span>'],
         responsive:{
             0:{
                 items:1

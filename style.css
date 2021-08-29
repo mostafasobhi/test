@@ -33,7 +33,7 @@ header.main-header{
     background: #fff;
 }
 .header-topmenu{
-    padding: 0 35px;
+    padding: 0 135px;
 }
 .header-topmenu ul li{
     display: inline-block;
@@ -209,11 +209,11 @@ main#main{
     width: 90% !important;
     margin: auto;
 }
-.product-titel{
+.product-title{
     text-align: center;
     line-height: 3;
 }
-.product-titel a{
+.product-title a{
     color: #222;
 }
 .product-info .product-price{
@@ -259,7 +259,7 @@ main#main{
     padding: 15px;
     margin-bottom: 20px;
 }
-.product-silder-title {
+.product-slider-title {
     color: #444;
     font-size: 18px;
     border-bottom: 2px solid #eee;
@@ -341,30 +341,30 @@ footer.main-footer{
     font-weight: 300;
     color: #555;   
 }
-.social-beand{
+.social-brand{
     margin-top: 10px;   
 }
-.social-beand a{
+.social-brand a{
     width: 32%;
     display: inline-block;
     font-size: 50px;
 }
-.social-beand .a1{
+.social-brand .a1{
     color: #3b5998;
 }
-.social-beand .a2{
+.social-brand .a2{
     color: #1da1f2;
 }
-.social-beand .a3{
+.social-brand .a3{
     color: #0077b5;
 }
-.social-beand .a4{
+.social-brand .a4{
     color: #ff1c69;
 }
-.social-beand .a5{
+.social-brand .a5{
     color: #ff422b;
 }
-.social-beand .a6{
+.social-brand .a6{
     color: #ff0000;
 }
 .footer-widget .footer-menu ul li a{
@@ -447,7 +447,7 @@ footer.main-footer{
     background: #fff;
     border-radius: 20px;
     overflow: hidden;
-    min-height: 345px;
+    min-height: 375px;
     margin-bottom: 20px;
 }
 .post-archive .product-item img{
@@ -460,7 +460,7 @@ footer.main-footer{
 }
 .post-archive .add-to-cart{
     padding: 14px 30px;
-    top: 48px;
+    top: 45px;
 }
 .post-archive .product-item:hover .add-to-cart{
     top: 10px;
