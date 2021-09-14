@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title><?php bloginfo('name'); ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/fontiran.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-</head>
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/reset.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/fontiran.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/owl.theme.default.min.css">
 
 <body>
 
@@ -47,7 +46,7 @@
                         <form action="">
                             <input type="search" placeholder="محصول مورد نظر خود را اینجا جستجو کنید ...">
                             <button>
-                                <i class="far fa-search"></i>
+                                <span class="iconify" data-icon="bx:bx-search" data-inline="false"></span>
                             </button>
                         </form>
                     </div>
@@ -183,20 +182,60 @@
 
         <div class="container">
 
-           
+            <div class="row">
+                <div class="col-12">
+
+                    <div id="main-slider" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#main-slider" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#main-slider" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#main-slider" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/main-slider-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/main-slider-2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/main-slider-3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#main-slider"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true">
+                                <span class="iconify" data-icon="akar-icons:chevron-left"></span>
+                            </span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#main-slider"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true">
+                                <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                            </span>
+                        </button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!---------  Main slider  --------->
 
             <div class="row content">
 
                 <div class="col-3">
 
                     <aside class="sidebar">
-                        
+
                         <div class="side-widget">
                             <span class="side-widget-title">پیشنهاد لحظه ای</span>
 
                             <div class="slider-owl-flash owl-carousel owl-theme">
                                 <div class="item">
-                                    
+
                                     <div class="product-item">
                                         <a href="#">
                                             <img src="images/p1.jpg" alt="">
@@ -212,7 +251,7 @@
 
                                 </div>
                                 <div class="item">
-                                    
+
                                     <div class="product-item">
                                         <a href="#">
                                             <img src="images/p2.jpg" alt="">
@@ -223,12 +262,12 @@
                                         </h3>
                                         <div class="product-info">
                                             <span class="product-price">500000 تومان</span>
-                                            
                                         </div>
                                     </div>
 
                                 </div>
-                            </div><!---Slider Owl Flash-->
+                            </div>
+                            <!---Slider Owl Flash-->
 
                             <div class="slider-progress"></div>
 
@@ -237,7 +276,7 @@
                         <div class="side-widget-ads">
                             <a href="#"><img src="images/ads1.jpg" alt=""></a>
                         </div>
-                        
+
                         <div class="side-widget">
                             <div class="side-widget-title"><span>آخرین نوشته های سایت</span></div>
 
@@ -281,23 +320,24 @@
 
                     </aside>
 
-                </div><!---------  Sidebar  --------->
+                </div>
+                <!---------  Sidebar  --------->
 
                 <div class="col-9">
 
                     <div class="main-content">
-                        
-                        <div class="post-archive">
-                            <h1 class="post-title">موبایل</h1>
 
-                            <div class="row">
+                        <div class="product-slider">
+                            <span class="product-slider-title">لپتاپ</span>
 
-                                <div class="col-4">
+                            <div class="product-slider-box owl-carousel owl-theme">
+                                <div class="item">
+
                                     <div class="product-item">
-                                        <a class="post-img" href="#">
-                                            <img src="images/p1.jpg" alt="">
+                                        <a href="#">
+                                            <img src="images/l1.jpg" alt="">
                                         </a>
-        
+
                                         <h3 class="product-title">
                                             <a href="#">اپل آیفون 12X Max</a>
                                         </h3>
@@ -307,12 +347,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="item">
+
                                     <div class="product-item">
-                                        <a class="post-img" href="#">
-                                            <img src="images/p1.jpg" alt="">
+                                        <a href="#">
+                                            <img src="images/l2.jpg" alt="">
                                         </a>
-        
+
                                         <h3 class="product-title">
                                             <a href="#">اپل آیفون 12X Max</a>
                                         </h3>
@@ -322,12 +363,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="item">
+
                                     <div class="product-item">
-                                        <a class="post-img" href="#">
-                                            <img src="images/p1.jpg" alt="">
+                                        <a href="#">
+                                            <img src="images/l3.jpg" alt="">
                                         </a>
-        
+
                                         <h3 class="product-title">
                                             <a href="#">اپل آیفون 12X Max</a>
                                         </h3>
@@ -337,12 +379,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="item">
+
                                     <div class="product-item">
-                                        <a class="post-img" href="#">
-                                            <img src="images/p1.jpg" alt="">
+                                        <a href="#">
+                                            <img src="images/l4.jpg" alt="">
                                         </a>
-        
+
                                         <h3 class="product-title">
                                             <a href="#">اپل آیفون 12X Max</a>
                                         </h3>
@@ -352,12 +395,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="item">
+
                                     <div class="product-item">
-                                        <a class="post-img" href="#">
-                                            <img src="images/p1.jpg" alt="">
+                                        <a href="#">
+                                            <img src="images/l5.jpg" alt="">
                                         </a>
-        
+
                                         <h3 class="product-title">
                                             <a href="#">اپل آیفون 12X Max</a>
                                         </h3>
@@ -367,75 +411,191 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <div class="product-item">
-                                        <a class="post-img" href="#">
-                                            <img src="images/p1.jpg" alt="">
-                                        </a>
-        
-                                        <h3 class="product-title">
-                                            <a href="#">اپل آیفون 12X Max</a>
-                                        </h3>
-                                        <div class="product-info">
-                                            <span class="product-price">500000 تومان</span>
-                                            <a class="add-to-cart" href="#">افزودن به سبد خرید</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="product-item">
-                                        <a class="post-img" href="#">
-                                            <img src="images/p1.jpg" alt="">
-                                        </a>
-        
-                                        <h3 class="product-title">
-                                            <a href="#">اپل آیفون 12X Max</a>
-                                        </h3>
-                                        <div class="product-info">
-                                            <span class="product-price">500000 تومان</span>
-                                            <a class="add-to-cart" href="#">افزودن به سبد خرید</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="product-item">
-                                        <a class="post-img" href="#">
-                                            <img src="images/p1.jpg" alt="">
-                                        </a>
-        
-                                        <h3 class="product-title">
-                                            <a href="#">اپل آیفون 12X Max</a>
-                                        </h3>
-                                        <div class="product-info">
-                                            <span class="product-price">500000 تومان</span>
-                                            <a class="add-to-cart" href="#">افزودن به سبد خرید</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="product-item">
-                                        <a class="post-img" href="#">
-                                            <img src="images/p1.jpg" alt="">
-                                        </a>
-        
-                                        <h3 class="product-title">
-                                            <a href="#">اپل آیفون 12X Max</a>
-                                        </h3>
-                                        <div class="product-info">
-                                            <span class="product-price">500000 تومان</span>
-                                            <a class="add-to-cart" href="#">افزودن به سبد خرید</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
 
                             </div>
-                            
+                            <!---Product Slider-->
+                        </div>
+                        <div class="product-slider">
+                            <span class="product-slider-title">لپتاپ</span>
+
+                            <div class="product-slider-box owl-carousel owl-theme">
+                                <div class="item">
+
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <img src="images/l1.jpg" alt="">
+                                        </a>
+
+                                        <h3 class="product-title">
+                                            <a href="#">اپل آیفون 12X Max</a>
+                                        </h3>
+                                        <div class="product-info">
+                                            <span class="product-price">500000 تومان</span>
+                                            <a class="add-to-cart" href="#">افزودن به سبد خرید</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <img src="images/l2.jpg" alt="">
+                                        </a>
+
+                                        <h3 class="product-title">
+                                            <a href="#">اپل آیفون 12X Max</a>
+                                        </h3>
+                                        <div class="product-info">
+                                            <span class="product-price">500000 تومان</span>
+                                            <a class="add-to-cart" href="#">افزودن به سبد خرید</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <img src="images/l3.jpg" alt="">
+                                        </a>
+
+                                        <h3 class="product-title">
+                                            <a href="#">اپل آیفون 12X Max</a>
+                                        </h3>
+                                        <div class="product-info">
+                                            <span class="product-price">500000 تومان</span>
+                                            <a class="add-to-cart" href="#">افزودن به سبد خرید</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <img src="images/l4.jpg" alt="">
+                                        </a>
+
+                                        <h3 class="product-title">
+                                            <a href="#">اپل آیفون 12X Max</a>
+                                        </h3>
+                                        <div class="product-info">
+                                            <span class="product-price">500000 تومان</span>
+                                            <a class="add-to-cart" href="#">افزودن به سبد خرید</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <img src="images/l5.jpg" alt="">
+                                        </a>
+
+                                        <h3 class="product-title">
+                                            <a href="#">اپل آیفون 12X Max</a>
+                                        </h3>
+                                        <div class="product-info">
+                                            <span class="product-price">500000 تومان</span>
+                                            <a class="add-to-cart" href="#">افزودن به سبد خرید</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!---Product Slider-->
+                        </div>
+                        <div class="product-slider">
+                            <span class="product-slider-title">لپتاپ</span>
+
+                            <div class="product-slider-box owl-carousel owl-theme">
+                                <div class="item">
+
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <img src="images/l1.jpg" alt="">
+                                        </a>
+
+                                        <h3 class="product-title">
+                                            <a href="#">اپل آیفون 12X Max</a>
+                                        </h3>
+                                        <div class="product-info">
+                                            <span class="product-price">500000 تومان</span>
+                                            <a class="add-to-cart" href="#">افزودن به سبد خرید</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <img src="images/l2.jpg" alt="">
+                                        </a>
+
+                                        <h3 class="product-title">
+                                            <a href="#">اپل آیفون 12X Max</a>
+                                        </h3>
+                                        <div class="product-info">
+                                            <span class="product-price">500000 تومان</span>
+                                            <a class="add-to-cart" href="#">افزودن به سبد خرید</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <img src="images/l3.jpg" alt="">
+                                        </a>
+
+                                        <h3 class="product-title">
+                                            <a href="#">اپل آیفون 12X Max</a>
+                                        </h3>
+                                        <div class="product-info">
+                                            <span class="product-price">500000 تومان</span>
+                                            <a class="add-to-cart" href="#">افزودن به سبد خرید</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <img src="images/l4.jpg" alt="">
+                                        </a>
+
+                                        <h3 class="product-title">
+                                            <a href="#">اپل آیفون 12X Max</a>
+                                        </h3>
+                                        <div class="product-info">
+                                            <span class="product-price">500000 تومان</span>
+                                            <a class="add-to-cart" href="#">افزودن به سبد خرید</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <img src="images/l5.jpg" alt="">
+                                        </a>
+
+                                        <h3 class="product-title">
+                                            <a href="#">اپل آیفون 12X Max</a>
+                                        </h3>
+                                        <div class="product-info">
+                                            <span class="product-price">500000 تومان</span>
+                                            <a class="add-to-cart" href="#">افزودن به سبد خرید</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!---Product Slider-->
                         </div>
 
                     </div>
 
-                </div><!---------  Main Content  --------->
+                </div>
+                <!---------  Main Content  --------->
 
 
 
@@ -457,7 +617,9 @@
                     <div class="footer-widget">
                         <span class="footer-widget-title">درباره ما</span>
                         <p>
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون  ابزارهای کاربردی می باشد. طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون ابزارهای کاربردی می باشد. طراحان خلاقی و فرهنگ
+                            پیشرو در زبان فارسی ایجاد کرد.
                         </p>
                     </div>
                 </div>
@@ -518,11 +680,13 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="http://localhost/iranpushtibani/wp-content/themes/iranpushtibani/js/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
+    ‍
+
 </body>
 
 </html>
